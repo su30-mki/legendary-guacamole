@@ -41,10 +41,10 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
-  background-size: 34px 34px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 84%);
+  background-image: linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.24), transparent 88%);
   pointer-events: none;
   z-index: -1;
 }
@@ -571,18 +571,45 @@ h1 {
 }
 
 .step {
-  padding: 22px 24px;
+  padding: 24px 24px 26px;
+}
+
+.step-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(139, 92, 246, 0.24));
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 .testimonial {
   padding: 32px;
   text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-glow {
+  position: absolute;
+  inset: auto -30px -40px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.16), transparent 70%);
+  pointer-events: none;
 }
 
 blockquote {
   margin: 0 0 18px;
   font-size: 1.15rem;
   color: var(--text-dark);
+  position: relative;
+  z-index: 1;
 }
 
 .author {
