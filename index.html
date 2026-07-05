@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060816" />
     <title>Northstar Studio</title>
     <meta
       name="description"
@@ -19,16 +20,20 @@
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
     <div class="page-shell">
-      <header class="hero">
+      <header class="hero" id="top">
         <div class="hero-glow glow-one" aria-hidden="true"></div>
         <div class="hero-glow glow-two" aria-hidden="true"></div>
         <div class="hero-glow glow-three" aria-hidden="true"></div>
+
         <nav class="nav">
-          <a class="brand" href="#">Northstar Studio</a>
+          <a class="brand" href="#top">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Northstar Studio
+          </a>
           <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
+            <a href="#services" data-nav="services">Services</a>
+            <a href="#work" data-nav="work">Work</a>
+            <a href="#contact" data-nav="contact">Contact</a>
           </div>
         </nav>
 
@@ -51,29 +56,31 @@
             </div>
           </div>
 
-          <div class="hero-panel reveal" aria-label="Studio highlights">
-            <div class="panel-top">
-              <p class="panel-label">Launch readiness</p>
-              <h2>Built for momentum.</h2>
-            </div>
-            <div class="panel-metrics">
-              <div>
-                <strong>4.9/5</strong>
-                <span>client satisfaction</span>
+          <div class="hero-visual reveal" aria-label="Studio highlights">
+            <div class="hero-card">
+              <div class="card-head">
+                <p class="panel-label">Launch readiness</p>
+                <span class="status-pill">Available for select projects</span>
               </div>
-              <div>
-                <strong>+38%</strong>
-                <span>avg. conversion lift</span>
+              <div class="panel-metrics">
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>client satisfaction</span>
+                </div>
+                <div>
+                  <strong>+38%</strong>
+                  <span>avg. conversion lift</span>
+                </div>
               </div>
-            </div>
-            <div class="panel-list">
-              <div class="panel-item">
-                <span class="dot"></span>
-                <p>Responsive storytelling across every screen</p>
-              </div>
-              <div class="panel-item">
-                <span class="dot"></span>
-                <p>Performance-first builds with clear SEO foundations</p>
+              <div class="panel-list">
+                <div class="panel-item">
+                  <span class="dot"></span>
+                  <p>Responsive storytelling across every screen</p>
+                </div>
+                <div class="panel-item">
+                  <span class="dot"></span>
+                  <p>Performance-first builds with clear SEO foundations</p>
+                </div>
               </div>
             </div>
           </div>
